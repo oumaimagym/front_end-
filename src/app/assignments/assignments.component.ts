@@ -26,7 +26,7 @@ export class AssignmentsComponent implements OnInit {
   prevPage: number = 0;
   hasNextPage: boolean = false;
   nextPage: number = 0;
-  displayedColumns: string[] = ['id', 'nom', 'dateDeRendu', 'rendu', 'supprimer', 'modifier'];
+  displayedColumns: string[] = ['id', 'nom', 'dateDeRendu', 'rendu', 'supprimer', 'modifier','details'];
 
   clickedRows = new Set<Assignment>();
   constructor(private assignmentsService: AssignmentsService, private snackBar: MatSnackBar,
